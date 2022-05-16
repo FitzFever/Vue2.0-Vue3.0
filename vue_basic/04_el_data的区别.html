@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="" />
+  </head>
+  <style type="text/css"></style>
+  <script src=" " type="text/javascript" charset="utf-8"></script>
+  <script>
+
+  </script>
+  <body>
+    <div id="app">
+      {{message}}
+    </div>
+    <script src="../js/vue.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+      Vue.config.productionTip = false
+      const app = new Vue({
+        el: '#app',
+        data: {
+          message: '你好啊',
+          age:18
+        }
+      });
+      
+      let person ={
+        name:'Bob',
+        male:'male'
+      }
+      const number = 18
+      /* Object.defineProperty(person,'age',{
+        get(){
+          console.log('有人获取了age');
+          return number
+        },
+        set(value){
+          console.log('有人修改了age,且值是',value);
+          number = value
+        }
+      }) */
+    </script>
+  </body>
+</html>

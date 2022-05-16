@@ -9,12 +9,29 @@
   </head>
   <style type="text/css"></style>
   <script src=" " type="text/javascript" charset="utf-8"> </script>
-  <script>
+  <script> 
 
   </script>
   <body>
+    <div id="app">
+      <h2>Hello,World,{{name}}</h2>
+    </br>
+      单向绑定
+      <input type="text" :value="name">
+    </br>
+      双向绑定
+      <input type="text" v-model="name">
+    </div>
+
     <script type="text/javascript">
       Vue.config.productionTip = false
+
+      new Vue({
+        el:'#app',
+        data:{
+          name:'APPP'
+        }
+      })
     </script>
       
   </body>
