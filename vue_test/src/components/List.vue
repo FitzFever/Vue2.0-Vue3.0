@@ -1,7 +1,6 @@
 <template>
   <ul class="todo-main">
-    <Item></Item>
-    <Item></Item>
+    <Item v-for="todoObj in todos" :todoObj="todoObj"></Item>
   </ul>
 </template>
 
@@ -9,7 +8,16 @@
 import Item from './Item.vue'
 export default {
   components: { Item,},
-  name:'List'
+  name:'List',
+  data(){
+    return {
+      todos:[
+        {id:'001',name:'吃饭',complete:true},
+        {id:'002',name:'睡觉',complete:false},
+        {id:'003',name:'打豆豆',complete:true},
+      ]
+    }
+  }
 }
 </script>
 
