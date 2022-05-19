@@ -19,9 +19,9 @@ Object.defineProperty(obj2, 'x', {
 })
 ```
 
-![Vue中的数据代理](D:\my_code_house\Vue2.0-Vue3.0\Vue中的数据代理.png)
+![Vue中的数据代理](D:/my_code_house/Vue2.0-Vue3.0/Vue%E5%9F%BA%E7%A1%80.assets/Vue%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E4%BB%A3%E7%90%86.png)
 
-![Vue中的数据代理_示意图](D:\my_code_house\Vue2.0-Vue3.0\Vue中的数据代理_示意图.png)
+![Vue中的数据代理_示意图](D:/my_code_house/Vue2.0-Vue3.0/Vue%E5%9F%BA%E7%A1%80.assets/Vue%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E4%BB%A3%E7%90%86_%E7%A4%BA%E6%84%8F%E5%9B%BE.png)
 
 ## Vue事件
 
@@ -242,7 +242,7 @@ new Vue({
 
 使用`v-for`进行遍历生成标签时,最好要加上`:key=""`
 
-> ![image-20220517120259660](D:\my_code_house\Vue2.0-Vue3.0\面试题_key的作用.png)
+> ![image-20220517120259660](D:/my_code_house/Vue2.0-Vue3.0/Vue%E5%9F%BA%E7%A1%80.assets/%E9%9D%A2%E8%AF%95%E9%A2%98_key%E7%9A%84%E4%BD%9C%E7%94%A8.png)
 
 ### 列表过滤
 
@@ -283,7 +283,7 @@ computed:{
 
 ## Vue监视数据的原理
 
-![Vue监视数据的原理](D:\my_code_house\Vue2.0-Vue3.0\Vue监视数据的原理.png)
+![Vue监视数据的原理](D:/my_code_house/Vue2.0-Vue3.0/Vue%E5%9F%BA%E7%A1%80.assets/Vue%E7%9B%91%E8%A7%86%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8E%9F%E7%90%86-16529311940885.png)
 
 1. vue会监视`data`中所有层次的数据。
 
@@ -423,7 +423,7 @@ Vue模板语法有2大类：
 
 ## 生命周期
 
-![](D:\my_code_house\Vue2.0-Vue3.0\Vue的生命周期.png)
+![](D:/my_code_house/Vue2.0-Vue3.0/Vue%E5%9F%BA%E7%A1%80.assets/Vue%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.png)
 
 ## 组件
 
