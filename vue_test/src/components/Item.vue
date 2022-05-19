@@ -2,7 +2,7 @@
   <li>
     <label>
       <input type="checkbox" :checked="todoObj.complete"/>
-      <span>{{todoObj.name}}</span>
+      <span>{{todoObj.title}}</span>
     </label>
     <button class="btn btn-danger" style="display:none">删除</button>
   </li>
