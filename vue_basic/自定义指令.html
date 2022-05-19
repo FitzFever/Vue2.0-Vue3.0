@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="" />
+  </head>
+  <style type="text/css"></style>
+  <script src=" " type="text/javascript" charset="utf-8"></script>
+  <script>
+
+  </script>
+  <body>
+    <div id="app">
+      {{message}}
+      <h2> 当前的n值为: <span v-text="n"></span></h2>
+      <h2> 10倍的n值为: <span v-big="n"></span></h2>
+      <button @click="n++">n++</button>
+      <input v-fbind="n">
+    </div>
+    <script src="../js/vue.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+      Vue.config.productionTip = false
+      const app = new Vue({
+        el: '#app',
+        data: {
+          message: '你好啊',
+          n: 0,
+        },
+        directives: {
+          big(element, binding){
+            element.innerText = binding.value *10
+          },
+          /* fbind(element, binding){
+            element.value = binding.value
+            setTimeout(()=>{
+              element.focus()
+            },0)
+          } */
+          fbind:{
+            bind(element, binding){
+              element.value = binding.value
+            },
+            inserted(element, binding){
+              element.focus()
+            },
+            update(element, binding) {
+              element.value = binding.value
+              element.focus()
+
+            },
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

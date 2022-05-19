@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="" />
+  </head>
+  <style type="text/css"></style>
+  <script src=" " type="text/javascript" charset="utf-8"></script>
+  <script>
+
+  </script>
+  <body>
+    <div id="app">
+      <!-- 今天天气很{{todayWeather}}<br> -->
+      今天天气很<br>
+      <button @click="weatherClick">点击切换天气</button>
+    </div>
+    <script src="../js/vue.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+      Vue.config.productionTip = false
+      const app = new Vue({
+        el: '#app',
+        data: {
+          isHot: false,
+        },
+        computed:{
+          todayWeather(){
+            return this.isHot ? '炎热' : '凉爽'
+          }
+        },
+        methods:{
+          weatherClick(){
+            this.isHot = !this.isHot
+          }
+        },
+      
+      });
+    </script>
+  </body>
+</html>
