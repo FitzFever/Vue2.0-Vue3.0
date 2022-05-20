@@ -1,6 +1,6 @@
 <template>
   <ul class="todo-main">
-    <Item v-for="todoObj in todos" :todoObj="todoObj"></Item>
+    <Item v-for="todoObj in todos" :todoObj="todoObj" :checkTodo="checkTodo"></Item>
   </ul>
 </template>
 
@@ -9,7 +9,7 @@ import Item from './Item.vue'
 export default {
   components: { Item,},
   name:'List',
-  props:['todos'],
+  props:['todos','checkTodo'],
 }
 </script>
 

@@ -3,7 +3,7 @@
   <div class="todo-container">
     <div class="todo-wrap">
       <MyHeader :addTodo="addTodo"></MyHeader>
-      <List :todos="todos"></List>
+      <List :todos="todos" :checkTodo="checkTodo"></List>
       <MyFooter></MyFooter>
     </div>
   </div>
@@ -29,9 +29,15 @@
       }
     },
     methods: {
+      //添加一个todo
       addTodo(x){
-        // console.log('收到了参数',x);
         this.todos.unshift(x)
+      },
+      //勾选或取消一个todo
+      checkTodo(id){
+        this.todos.forEach((todo) => {
+          if(id == todo.id) todo.complete = !todo.complete
+        });
       }
     },
   }
